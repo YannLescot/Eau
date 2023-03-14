@@ -29,6 +29,7 @@ function MajusculeSurDeux(arg) {
           if (arg.length % 2 === 0) {
             majusculeSurDeux += arg[arg.length - 1].toUpperCase();
           }
+          console.log(majusculeSurDeux);
     }
   else{
     console.log('error')
@@ -38,4 +39,3 @@ function MajusculeSurDeux(arg) {
 
 RecupString(string);
 MajusculeSurDeux(stringMaj);
-console.log(majusculeSurDeux);
