@@ -16,7 +16,7 @@ function TriSelection(tab) {
   for (let i = 0; i < tab.length; i++) {
     let min = i;
     for (let j = i + 1; j < tab.length; j++) {
-      if (tab[j] < tab[min]) {
+      if (Number(tab[j]) < Number(tab[min])) {
         min = j;
       }
     }
