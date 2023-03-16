@@ -1,6 +1,5 @@
 let string = process.argv
 let tableau =[]
-let tableauBulle =[]
 function RecupNb (arg){
     let j = 0
     for (let i = 2 ; i< arg.length ; i++){
@@ -15,7 +14,7 @@ function RecupNb (arg){
     }
 
 function TriBulle (tab){
-    for (let i = tab.length -1 ; i > 0 ; i--){
+    for (let i = tab.length  ; i > 0 ; i--){
         for (let j = 0 ; j < tab.length; j++){
             if(tab[j] > tab[j+1] ){
                 let temp = tab[j];
