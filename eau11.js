@@ -5,7 +5,7 @@ function RecupNb (arg){
 for (let i = 2 ; i< arg.length ; i++){
     if (isNaN(arg[i])) {
         console.log(`error`)
-        process.exit() // arrête le script avec le code d'erreur 1
+        process.exit() // arrête le script avec le code d'erreur 
     }
     tableau[i-2] = arg[i]
 }
