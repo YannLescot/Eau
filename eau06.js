@@ -11,7 +11,22 @@ function RecupString(arg) {
   }
 }
 
+/* isCharLetter(chr){
+  Define if char is letter
+  Return the result
+  Regarder du côté des RegEx
+}*/
+
+
+
 function MajusculeSurDeux(arg) {
+  /*Créer un index init à 0
+  Forcer le premier charactere
+  Si index pair, mettre en maj
+  Si impair, mettre en min
+  isCharLetter(arg[i]) === true dans ce cas, je fais l'action et j'augmente index
+  si c'est false, je fais rien et j'augmente pas l'index
+   aa,a Aa,A */
     if(isNaN(arg*1)){
         for (let i = 0, j = i + 1; i < arg.length && j < arg.length; i += 2, j += 2) {
             if (arg[j] === " ") {
