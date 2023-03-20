@@ -20,6 +20,7 @@ function TriBulle (tab){
                 let temp = tab[j];
                 tab[j] = tab[j+1];
                 tab[j+1] = temp;
+                //tab[j], tab[j+1] = tab[j+1], tab[j]
             }
         }
     }
