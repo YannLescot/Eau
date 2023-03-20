@@ -1,23 +1,24 @@
-let string = process.argv
-let tableau =[]
+let argArray = process.argv
 let recherche = process.argv[process.argv.length-1]
 
-function Tableau (arg){
-    for(let i = 2 , j=0 ; i<arg.length-1; i++, j++){
-        tableau[j] = arg[i]
+function CleanArgTableau(arr){
+    let tableau =[]
+    for(let i = 2 , j=0 ; i<arr.length-1; i++, j++){
+        tableau[j] = arr[i]
+    }
+    return tableau;
+}
+
+function  GetSearchIndex(arr, str){
+    for(let i = 0 ; i<arr.length; i++){
+        if(arr[i]===str){
+            return i; 
+            break
+        }
+        else if (i === arr.length-1){
+            return -1;
+        }
     }
 }
 
-function Recherche (arg){
-    for(let i = 0 ; i<arg.length; i++){
-        if(arg[i]===recherche){
-            console.log(i) 
-            break
-        }
-        else if (i === arg.length-1){
-            console.log(-1)
-        }
-    }
-}
-Tableau(string)
-Recherche(tableau)
+console.log(Recherche(CleanArgTableau(argArray), recherche))
