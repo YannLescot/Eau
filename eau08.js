@@ -19,5 +19,10 @@ function Verifchiffre (arg){
     }
 }
 
+/*function isArgDigit/Number(arg){
+    arg === regEx ? return true : return false
+}
+*/
+
 RecupString(string)
 console.log(Verifchiffre(stringVerif))
