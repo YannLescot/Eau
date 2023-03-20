@@ -1,16 +1,18 @@
 let arguments = process.argv
-function InverserArgument (args){
-    if(!args[2]){
-        console.log('Erreur arguments')
+
+function IsArgValid(arg){
+        if(!args[2]){
+        return false;
     }
-    else {
+    return true;
+}
+
+function InverserArgument (args){
         let argumentInverse = ''
         for(let i=args.length-1  ; i>=2 ;i--){
              argumentInverse += `${args[i]} \n`   
             }
-        console.log(argumentInverse)
-    }
-    
+        return argumentInverse;
 }
 
-InverserArgument(arguments)
+IsArgValid(arguments) === true ? console.log(InverserArgument(arguments)) : console.log("Error during argument check")
